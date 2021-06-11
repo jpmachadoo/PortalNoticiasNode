@@ -4,7 +4,7 @@ module.exports = function () {
     }
 
     this.getNoticia = function (conn, callback) {
-        conn.query('select * from noticias where id_noticia = 1');
+        conn.query('select * from noticias where id_noticia = 1', callback);
     }
 
     return this;
